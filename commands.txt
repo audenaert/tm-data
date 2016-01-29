@@ -1,0 +1,4 @@
+mport-dir --input dataset --output prog4Hum.mallet --keep-sequence --remove-stopwords TRUE --stoplist-file ..\stopwords\en.txt
+
+mallet train-topics --input prog4Hum.mallet  --num-topics 50 --optimize-interval 20 --output-state topic-state.gz  --output-topic-keys prog4Hum_topickeys.txt --output-doc-topics prog4Hum_doctopics.txt
+
